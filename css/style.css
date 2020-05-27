@@ -12,6 +12,8 @@ body {
   font-size: 30px;
 }
 .wrapper {
+  display: flex;
+  justify-content: space-around;
   padding: 30px;
   text-align: center;
   width: 85%;
@@ -24,21 +26,34 @@ body {
 li {
   list-style-type: none;
 }
-.fizzbuzz-wrapper {
-  background: orange;
+li[class*="-wrapper"] {
   padding: 5px;
   border: 2px solid black;
   border-radius: 5px;
 }
-.fizz-wrapper {
-  background: yellow;
-  padding: 5px;
-  border: 2px solid black;
-  border-radius: 5px;
+
+.fizzbuzz-1-wrapper {
+  background: #037101;
 }
-.buzz-wrapper {
-  background: red;
-  padding: 5px;
-  border: 2px solid black;
-  border-radius: 5px;
+.fizz-1-wrapper {
+  background: #f8d704;
+}
+.buzz-1-wrapper {
+  background: #274e94;
+}
+
+.fizzbuzz-2-wrapper {
+  background: #49bf01;
+}
+.fizz-2-wrapper {
+  background: #fefe66;
+}
+.buzz-2-wrapper {
+  background: #018ff7;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 20px;
+  }
 }
